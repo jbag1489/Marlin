@@ -1855,7 +1855,8 @@
   // After a runout is detected, continue printing this length of filament
   // before executing the runout script. Useful for a sensor at the end of
   // a feed tube. Requires 4 bytes SRAM per sensor, plus 4 bytes overhead.
-  #define FILAMENT_RUNOUT_DISTANCE_MM 800
+  // JRB - ~33 inches from runout sensor to extruder, so 33 * 25.4 mm/inch = 838mm
+  #define FILAMENT_RUNOUT_DISTANCE_MM 830
 
   #ifdef FILAMENT_RUNOUT_DISTANCE_MM
     // Enable this option to use an encoder disc that toggles the runout pin
